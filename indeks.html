@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&family=Viga&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- JUDUL ------------------------------------------------------------- -->
+    <div class="container">
+        <div class="judul-container">
+            <h1>KALKULATOR BMI</h1>
+            <p>BMI adalah indikator pengukuran yang digunakan untuk menentukan kategori berat badan ideal atau tidak.
+                BMI
+                dikembangkan oleh Adolphe Quetelet selama abad ke-19. Melalui hasil perhitungan BMI, Anda akan
+                mengetahui
+                kategori berat badan, yaitu kurus, ideal, berlebihan, atau bahkan obesitas</p>
+        </div>
+
+        <!-- KALKULATOR ------------------------------------------------------ -->
+        <div class="calculator-container">
+            <h2>Kalkulator :</h2>
+            <div class="input">
+                <h3>Jenis Kelamin</h3>
+                <div class="radio-pilihan">
+                    <input type="radio" name="jenisKelamin" value="Laki-Laki"> Laki-Laki
+                    <input type="radio" name="jenisKelamin" value="Perempuan"> Perempuan
+                </div>
+            </div>
+            <div class="input">
+                <h3>Usia (Tahun)</h3>
+                <input type="number" id="usia" placeholder="masukan usia">
+            </div>
+            <div class="input">
+                <h3>Berat Badan (kg)</h3>
+                <input type="number" id="beratBadan" placeholder="masukan berat badan">
+            </div>
+            <div class="input">
+                <h3>Tinggi Badan (cm)</h3>
+                <input type="number" id="tinggiBadan" placeholder="masukan tinggi badan">
+            </div>
+            <div class="button-pilihan">
+                <button onclick="hitungBMI()">Hitung BMI</button>
+                <button onclick="resetBMI()">Reset</button>
+            </div>
+        </div>
+
+        <!-- HASIL ------------------------------------------------------------------ -->
+        <div class="hasil-container">
+            <h2>HASIL : </h2>
+            <div id="hasilBMI"></div>
+            <p id="jenisKelaminPilihan"></p>
+            <p id="usiaPilihan"></p>
+
+            <!-- Paragraf untuk setiap rentang BMI -->
+            <p class="paragraf-bmi p1">BMI Anda berada pada rentang kurang dari 18.4 <br> Sehingga status anda :
+                Kekurangan
+                Berat Badan</p>
+            <p class="paragraf-bmi p2">BMI Anda berada pada rentang 18.5 - 24.9 <br> Sehingga status anda : Normal
+                (Ideal)
+            </p>
+            <p class="paragraf-bmi p3">BMI Anda berada pada rentang 25.0 - 29.9 <br> Sehingga status anda : Kelebihan
+                Berat
+                Badan</p>
+            <p class="paragraf-bmi p4">BMI Anda berada pada rentang lebih dari 30.0 <br> Sehingga status anda :
+                Kegemukan
+                (Obesitas)</p>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
